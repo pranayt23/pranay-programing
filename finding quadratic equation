@@ -25,7 +25,7 @@ void main()
 	{
 		real=-b/(2*a);
 		imaginary=sqrt(-discriminant)/(2*a);
-		printf("r1=%3.f+%3.f i	r2=%3.f-%3.f i\n"	,real,imaginary,real,imaginary);
+		printf("r1=%3.f+%3.f i	r2=%3.f-%3.f i\n",real,imaginary,real,imaginary);
 		printf("ROOTS ARE IMAGINARY");
 	}
 }
