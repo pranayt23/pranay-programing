@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int a,b,c;
+	float discriminant,r1,r2,real,imaginary;
+	printf("a=");scanf("%d",&a);
+	printf("b=");scanf("%d",&b);
+	printf("c=");scanf("%d",&c);
+	discriminant=b*b-4*a*c;
+	if(discriminant>0)
+	{
+		r1=(-b+sqrt(discriminant))/(2*a);
+		r2=(-b-sqrt(discriminant))/(2*a);
+		printf("r1=%.3f		r2=%.3f\n",r1,r2);
+		printf("ROOTS ARE REAL AND DIFFERENT");
+	}
+	else if(discriminant==0)
+	{
+		r1=r2=-b/(2*a);
+		printf("r1=r1=%3.f\n",r1);
+		printf("ROOTS ARE REAL AND EQUAL");
+	}
+	else
+	{
+		real=-b/(2*a);
+		imaginary=sqrt(-discriminant)/(2*a);
+		printf("r1=%3.f+%3.f i	r2=%3.f-%3.f i\n"	,real,imaginary,real,imaginary);
+		printf("ROOTS ARE IMAGINARY");
+	}
+}
