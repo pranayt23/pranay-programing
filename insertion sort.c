@@ -25,7 +25,7 @@ void printArray(int arr[], int n)
 int main()
 {
 	int n;
-	printf("Enter the size of array :");
+	printf("Enter the size of an array :");
 	int arr[n];
 	scanf("%d",&n);
 	for(int i = 0; i < n;i++){
